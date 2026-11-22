@@ -1,0 +1,131 @@
+{
+  "info": {
+    "_postman_id": "c21f446b-3f89-483b-a83c-a968308ff4cd",
+    "name": "Cloud Computing",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "13104107",
+    "_collection_link": "https://go.postman.co/collection/13104107-c21f446b-3f89-483b-a83c-a968308ff4cd?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Project 1",
+      "item": [
+        {
+          "name": "Get Image Details",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "inputFile",
+                  "type": "file",
+                  "uuid": "f4b55a75-40e5-43ba-be63-8608262bd733",
+                  "src": "postman-cloud:///1f1137ef-02a7-4f40-8357-792442ca27cf"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://192.168.199.128:8000/",
+              "protocol": "http",
+              "host": [
+                "192",
+                "168",
+                "199",
+                "128"
+              ],
+              "port": "8000",
+              "path": [
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Describe Table",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}/describe_table/sushanth-dynamoDB-table",
+              "host": [
+                "{{localhost}}"
+              ],
+              "path": [
+                "describe_table",
+                "sushanth-dynamoDB-table"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Table",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}/create_table/sushanth-dynamoDB-table",
+              "host": [
+                "{{localhost}}"
+              ],
+              "path": [
+                "create_table",
+                "sushanth-dynamoDB-table"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Populate Table",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}/populate_table/sushanth-dynamoDB-table",
+              "host": [
+                "{{localhost}}"
+              ],
+              "path": [
+                "populate_table",
+                "sushanth-dynamoDB-table"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Instance Status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://44.251.63.98:8000/instance_status",
+              "protocol": "http",
+              "host": [
+                "44",
+                "251",
+                "63",
+                "98"
+              ],
+              "port": "8000",
+              "path": [
+                "instance_status"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

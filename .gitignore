@@ -1,0 +1,44 @@
+# Hidden directories at any depth (editor settings, environments, credentials).
+.*/
+
+# Python bytecode and package/build output.
+__pycache__/
+*.py[cod]
+*$py.class
+build/
+dist/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# Virtual environments.
+venv/
+env/
+ENV/
+
+# Local environment variables and credentials.
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+
+# Test and coverage output.
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Logs and temporary files.
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Operating system files.
+.DS_Store
+Thumbs.db
+Desktop.ini
